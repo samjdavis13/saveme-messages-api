@@ -1,0 +1,14 @@
+{
+  "name": "saveme-message-api",
+  "version": "1.0.0",
+  "description": "A simple MEAN Stack application & api to power the SaveMe messaging service 👍🏻",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Davis <sam@sjd.co>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
