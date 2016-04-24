@@ -3,12 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>SaveMe Message API</title>
-
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="dist/css/style.css">
     </head>
-    <body>
+    <body ng-app="messagesApp">
 
-        
+        <div class="messagesContainer" ng-controller="mainCtrl">
 
+            <input type="button" class="add" value="Add Message" ng-click="addMessage()"></input>
+
+            <li ng-controller="messageCtrl" class="message" ng-init="message.edited = false; editing = false" ng-repeat="message in messages">
+                <label ng-click="editing = true" ng-hide="editing" for="message" ng-bind="message.content"></label>
+                <input ng-blur="editing = false" ng-show="editing" name="message" type="text" ng-model="message.content">
+                <span class="controls">
+                    <a href="#" class="save">Save</a>
+                    <a ng-click="deleteMessage(message, $index)" href="#" class="delete">Delete</a>
+                </span>
+            </li>
+
+        </div>
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="dist/js/app.js"></script>
+
+        <!-- <script src="scripts/manifest.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/services/data.js"></script> -->
     </body>
 </html>

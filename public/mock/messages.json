@@ -1,0 +1,7 @@
+{
+    "messages": [
+        {"_id": "1", "content": "Message 1"},
+        {"_id": "2", "content": "Message 2"},
+        {"_id": "3", "content": "Message 3"}
+    ]
+}
