@@ -1,0 +1,22 @@
+{
+  "name": "saveme-web-app",
+  "homepage": "https://github.com/samjdavis13/saveme-messages-api",
+  "authors": [
+    "Sam Davis <sam@sjd.co>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "jquery": "^2.2.3"
+  }
+}
