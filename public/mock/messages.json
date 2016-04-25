@@ -1,10 +1,6 @@
 {
     "messages": [
-        {"content": "Prevented {{count}} fit{{plural}} of rage"},
-        {"content": "Stopped {{count}} meltdown{{plural}}"},
-        {"content": "{{count}} keyboard{{plural}} saved from mashing"},
-        {"content": "{{count}} tantrum{{plural}} prevented"},
-        {"content": "SaveMe has SavedYou {{count}} time{{plural}}"},
-        {"content": "{{count}} heart attack{{plural}} prevented"}
+        {"content": "Some fake messages"},
+        {"content": "Some fake message 2"}
     ]
 }
