@@ -1,3 +1,4 @@
+var autoprefixer = require('gulp-autoprefixer');
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
@@ -12,6 +13,7 @@ gulp.task('sass', function() {
     return gulp.src(appFolder + 'scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer('last 2 versions'))
     .pipe(rename('style.css'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(appFolder + 'dist/css'));

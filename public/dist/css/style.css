@@ -1,2 +1,70 @@
+/** Setup border box sizing, site wide */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html {
+  background-color: #e6e6e6;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-size: 1em; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #875CC7; }
+
+a {
+  color: #875CC7; }
+
+body {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+header {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+
+h1 {
+  text-align: center; }
+
+.messagesContainer .add {
+  padding: 10px 20px;
+  background: #875CC7;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  color: white;
+  font-size: 0.75em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase; }
+
+.messagesContainer .message {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  display: block; }
+  .messagesContainer .message input[type="text"] {
+    height: 40px;
+    font-size: 1em;
+    width: 80%; }
+  .messagesContainer .message .controls {
+    float: right; }
+    .messagesContainer .message .controls a {
+      text-decoration: none;
+      margin-left: 10px;
+      text-transform: uppercase;
+      font-size: .8em; }
+    .messagesContainer .message .controls .delete {
+      font-weight: bold;
+      color: #875CC7; }
+  .messagesContainer .message.edited label:after {
+    content: " Edited";
+    color: #bfbfbf; }
 
 /*# sourceMappingURL=style.css.map */
