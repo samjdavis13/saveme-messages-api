@@ -2,6 +2,10 @@ angular.module('messagesApp')
 
 .service('dataService', function($http, $q) {
 
+    this.getRequestData = function(cb) {
+        $http.get('/api/requests').then(cb);
+    };
+
     this.getMessages = function(cb) {
         $http.get('/api/messages').then(cb);
     }

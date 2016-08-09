@@ -2,6 +2,17 @@
 
 angular.module('messagesApp', []);
 angular.module('messagesApp')
+.controller('analyticCtrl', function($scope, dataService){
+
+    dataService.getRequestData(function(response) {
+        var uniqueRequests = response.data.unique;
+        var totalRequests = response.data.total;
+        $scope.uniqueRequests = uniqueRequests;
+        $scope.totalRequests = totalRequests;
+    });
+
+});
+angular.module('messagesApp')
 .controller('mainCtrl', function($scope, dataService){
 
     dataService.getMessages(function(response) {
@@ -44,6 +55,10 @@ angular.module('messagesApp')
 angular.module('messagesApp')
 
 .service('dataService', function($http, $q) {
+
+    this.getRequestData = function(cb) {
+        $http.get('/api/requests').then(cb);
+    };
 
     this.getMessages = function(cb) {
         $http.get('/api/messages').then(cb);
